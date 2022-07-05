@@ -45,6 +45,16 @@
                 <a href="javascript:void()">欢迎:${sessionScope.frontuser}</a>
             </c:if>
         </li>
+        <c:if test="${sessionScope.frontuser!=null}">
+            <li class="personalInfo">
+                <a href="${pageContext.request.contextPath}/user/userPersonalInfo">会员中心</a>
+            </li>
+        </c:if>
+        <c:if test="${sessionScope.frontuser==null}">
+            <li class="personalInfo">
+                <a href="${pageContext.request.contextPath}/shop/userLoginGet">会员中心</a>
+            </li>
+        </c:if>
         <li>
             <c:if test="${sessionScope.frontuser==null}">
                 <a href="${pageContext.request.contextPath}/user/userRegisterGet?type=9">注册账号</a>
@@ -98,8 +108,10 @@
     </div>
 </div>
 
-<div class="container footer" style="position: relative;bottom: 0px ">
+<div class="container footer">
+<div class="span24">
     <div class="copyright">零零柒商城 版权所有</div>
+</div>
 </div>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/views/index.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/libs/common.js"></script>

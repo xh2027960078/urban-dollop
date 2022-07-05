@@ -21,13 +21,13 @@
   </head>
   <body class="easyui-layout" ng-App="adminMainApp" ng-controller="adminMainCtrl">
 	<div data-options="region:'north'" style="height:100px;text-align: center;">
-	       <span style="font-size:50px;" >零食商城后台管理</span>
+	       <span style="font-size:50px;" >零零柒零食商城后台管理</span>
 	      <div style="font-size: 15px;position:absolute; right:0; bottom:0;">
 			<span>欢迎:${sessionScope.adminName}</span>|
 			<span id="loginOut" style="cursor:pointer">[退出]</span>
 		  </div>
 	</div>
-	<div data-options="region:'west',split:true,title:'菜单栏'" style="width:150px;padding:10px;">
+	<div data-options="region:'west',split:true,title:'菜单'" style="width:150px;padding:10px;">
         <div class="easyui-accordion" data-options="fit:true,border:false">
 		    <c:if test="${sessionScope.roleId == 1 }">
 		    <c:forEach items="${adminMenu}" var="list">

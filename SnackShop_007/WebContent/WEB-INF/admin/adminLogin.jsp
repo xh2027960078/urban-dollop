@@ -13,7 +13,7 @@
 <body class="login">
     <div class="menu-toggler sidebar-toggler"></div>
     <div class="content">
-        <h3 class="form-title font-green">用户登录</h3>
+        <h3 class="form-title font-green">管理员登录</h3>
         <form action="${pageContext.request.contextPath}/admin/login/adminGoLogin" method="post">
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">用户名</label>

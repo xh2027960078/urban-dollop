@@ -517,6 +517,7 @@ div.index .newProduct .tabContent img {
 }
 
 div.index .friendLink {
+	width: 100%;
 	position: absolute;
 	bottom: 0px;
 	height: 30px;

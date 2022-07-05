@@ -18,54 +18,67 @@
 </head>
 <body ng-app="carApp">
 <div class="container header">
-	<div class="span24">
-		<ul class="mainNav">
-			<li>
-				<a href="${pageContext.request.contextPath}/shop/index">首页</a>
-				|
+	<%--    <div class="span24">--%>
+	<ul class="mainNav" style="display: flex; justify-content: space-between">
+		<li>
+			<a href="${pageContext.request.contextPath}/shop/index">首页</a>
+		</li>
+		<li>
+			<a href="${pageContext.request.contextPath}/shop/puffingType?type=2">膨化类</a>
+		</li>
+		<li>
+			<a href="${pageContext.request.contextPath}/shop/puffingType?type=1">肉制类</a>
+		</li>
+		<li>
+			<a href="${pageContext.request.contextPath}/shop/puffingType?type=3">饮料类</a>
+		</li>
+		<li>
+			<a href="${pageContext.request.contextPath}/shop/puffingType?type=6">进口类</a>
+		</li>
+		<li>
+			<a href="${pageContext.request.contextPath}/shop/puffingType?type=4">其他</a>
+		</li>
+		<li>
+			<a href="${pageContext.request.contextPath}/sorder/gotocar?type=7">购物车</a>
+		</li>
+		<li>
+			<c:if test="${sessionScope.frontuser==null}">
+				<a href="${pageContext.request.contextPath}/shop/userLoginGet?type=8">登录</a>
+			</c:if>
+			<c:if test="${sessionScope.frontuser!=null}">
+				<a href="javascript:void()">欢迎:${sessionScope.frontuser}</a>
+			</c:if>
+		</li>
+		<c:if test="${sessionScope.frontuser!=null}">
+			<li class="personalInfo">
+				<a href="${pageContext.request.contextPath}/user/userPersonalInfo">会员中心</a>
 			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/shop/puffingType?type=2">膨化类</a>
-				|
+		</c:if>
+		<c:if test="${sessionScope.frontuser==null}">
+			<li class="personalInfo">
+				<a href="${pageContext.request.contextPath}/shop/userLoginGet">会员中心</a>
 			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/shop/puffingType?type=1">肉制类</a>
-				|
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/shop/puffingType?type=3">饮料类</a>
-				|
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/shop/puffingType?type=6">进口类</a>
-				|
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/shop/puffingType?type=4">其他</a>
-				|
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/sorder/gotocar?type=7">购物车</a>
-				|
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/shop/userLoginGet?type=8">登录账号</a>
-				|
-			</li>
-			<li>
+		</c:if>
+		<li>
+			<c:if test="${sessionScope.frontuser==null}">
 				<a href="${pageContext.request.contextPath}/user/userRegisterGet?type=9">注册账号</a>
-				|
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/admin/login/adminLogin?type=10">管理员登录</a>
-				|
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath}/sorder/gotocar">购物车</a>
-				|
-			</li>
-		</ul>
-	</div>
+			</c:if>
+			<c:if test="${sessionScope.frontuser!=null}">
+
+			</c:if>
+		</li>
+		<li>
+			<a href="${pageContext.request.contextPath}/admin/login/adminLogin?type=10">管理员登录</a>
+		</li>
+		<li>
+			<c:if test="${sessionScope.frontuser==null}">
+			</c:if>
+			<c:if test="${sessionScope.frontuser!=null}">
+				<a href="${pageContext.request.contextPath}/shop/userlogout">注销账号</a>
+			</c:if>
+		</li>
+	</ul>
+	<%--    </div>--%>
 </div>
 
 <div class="container car">
@@ -170,7 +183,7 @@
 	</div>
 <div class="container footer">
 	<div class="span24">
-		<div class="copyright">网上商城 版权所有</div>
+		<div class="copyright">零零柒商城 版权所有</div>
 	</div>
 </div>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/libs/common.js"></script>

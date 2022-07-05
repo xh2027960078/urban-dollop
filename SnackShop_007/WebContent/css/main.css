@@ -116,7 +116,7 @@ body {
     font-size:16px;
     color:#FFFFFF;
     text-decoration:none;
-    font-family: "Î¢ÈíÑÅºÚ";
+    font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½";
   
   	  border-left: 1px solid darkgrey;
 
@@ -130,7 +130,7 @@ body {
     font-size:16px;
    color:#FFFFFF;
     text-decoration:none;
-    font-family: "Î¢ÈíÑÅºÚ";
+    font-family: "Î¢ï¿½ï¿½ï¿½Åºï¿½";
     
    background-color:#A6A19C;
    
@@ -181,7 +181,7 @@ body {
 .title{
     height:35px;
     border-bottom:2px solid #E8E8E8;
-    font-family: "???¨ª????";
+    font-family: "???ï¿½ï¿½????";
     font-weight: bold;
     color: #786F66;
 }
@@ -195,7 +195,7 @@ body {
 .title_right{
     float:right;
     line-height: 35px;
-    width:20%;/*ÕâÊÇ²»ÄÜÊÇ30%£¬paddingÕ¼ÓÃÔªËØµÄ´óÐ¡*/
+    width:20%;/*ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½30%ï¿½ï¿½paddingÕ¼ï¿½ï¿½Ôªï¿½ØµÄ´ï¿½Ð¡*/
 }
 .title_right a {
     color: #999;
@@ -284,6 +284,7 @@ body {
     height: 150px;
 }
 .copyright{
+    text-align: center;
     clear: both;
     width:100%;
     height:200px;
@@ -315,7 +316,7 @@ body {
 }
 
 .list_main{
-    _height:350px;/*½â¾öie6ÏÂÃæ²»Ö§³Ömin-height*/
+    _height:350px;/*ï¿½ï¿½ï¿½ie6ï¿½ï¿½ï¿½æ²»Ö§ï¿½ï¿½min-height*/
     min-height: 350px;
     margin-top:10px;
 }
@@ -328,7 +329,7 @@ body {
 .list_box{
     width:770px;
     min-height: 350px;
-    _height:350px;/*½â¾öie6ÏÂÃæ²»Ö§³Ömin-height*/
+    _height:350px;/*ï¿½ï¿½ï¿½ie6ï¿½ï¿½ï¿½æ²»Ö§ï¿½ï¿½min-height*/
     border:1px solid #E8E8E8;
     float:right;
 
@@ -337,7 +338,7 @@ body {
     height:35px;
     line-height:35px;
     font-size:14px;
-    font-family:"Î¢ÈíÑÅºÚ";
+    font-family:"Î¢ï¿½ï¿½ï¿½Åºï¿½";
     background:url("../image/titile_bg.gif") repeat-x;
     padding-left:20px;
 }
@@ -366,7 +367,7 @@ body {
 }
 .list_box h2{
     font-size:14px;
-    font-family:"Î¢ÈíÑÅºÚ";
+    font-family:"Î¢ï¿½ï¿½ï¿½Åºï¿½";
     color:#666;
     height:35px;
     line-height: 35px;

@@ -16,10 +16,10 @@ import com.snack.utils.ResponseUtil;
 @RequestMapping("/admin/img/")
 public class AdminImg {
 	
-	@RequestMapping("mainToAdminImg")
-	public String mainToAdminImg(){
-		return "admin/Img/adminImg";
-	} 
+//	@RequestMapping("mainToAdminImg")
+//	public String mainToAdminImg(){
+//		return "admin/Img/adminImg";
+//	}
 	
 	@RequestMapping(value="/upload")
 	@ResponseBody
