@@ -926,8 +926,8 @@ div.productContent .action {
 	clear: right;
 	padding: 2px;
 	color: #333333;
-	border: 1px solid #e7dbb1;
-	background-color: #fffee6;
+	/*border: 1px solid #e7dbb1;*/
+	background-color: #2b7cd3;
 }
 
 div.productContent .action:hover {
@@ -1076,7 +1076,7 @@ div.productContent .quantity dt {
 	width: 60px;
 	float: left;
 	margin-right: 10px;
-	color: #888888;
+	color: white;
 	text-align: right;
 	white-space: nowrap;
 }
@@ -1084,7 +1084,7 @@ div.productContent .quantity dt {
 div.productContent .quantity dd {
 	float: left;
 	margin-right: 4px;
-	color: #666666;
+	color: white;
 }
 
 div.productContent .quantity input {
@@ -1113,7 +1113,8 @@ div.productContent .quantity .increase {
 	cursor: pointer;
 	overflow: hidden;
 	border: 1px solid #dbdbdb;
-	background: url(../image/product.gif) 0px -570px #f9f9f9 no-repeat;
+	/*background: url(../image/product.gif) 0px -570px #f9f9f9 no-repeat;*/
+	background-color: #4d4d4d;
 }
 
 div.productContent .quantity .decrease {
@@ -1124,7 +1125,8 @@ div.productContent .quantity .decrease {
 	cursor: pointer;
 	overflow: hidden;
 	border: 1px solid #dbdbdb;
-	background: url(../image/product.gif) -30px -570px #f9f9f9 no-repeat;
+	/*background: url(../image/product.gif) -30px -570px #f9f9f9 no-repeat;*/
+	background-color: #4d4d4d;
 }
 
 div.productContent .buy {
@@ -1139,14 +1141,15 @@ div.productContent .buy .addProductNotify {
 	height: 36px;
 	line-height: 34px;
 	float: left;
-	padding-left: 20px;
+	/*padding-left: 20px;*/
 	color: #ffffff;
 	font-size: 15px;
 	font-weight: bold;
 	font-family: "Microsoft YaHei";
 	cursor: pointer;
 	border: none;
-	background: url(../image/product.gif) 0px -600px no-repeat;
+	/*background: url(../image/product.gif) 0px -600px no-repeat;*/
+	background-color: #4d4d4d;
 }
 
 div.productContent .buy .addCart {
@@ -1161,7 +1164,8 @@ div.productContent .buy .addCart {
 	font-family: "Microsoft YaHei";
 	cursor: pointer;
 	border: none;
-	background: url(../image/product.gif) 0px -600px no-repeat;
+	/*background: url(../image/product.gif) 0px -600px no-repeat;*/
+	background-color: #4d4d4d;
 }
 
 div.productContent .buy a {

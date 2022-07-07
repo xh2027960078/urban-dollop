@@ -80,7 +80,7 @@
         <div style="width: 10%;height:640px;float: left;background-color: #1E6BAE">
             <table cellSpacing="0" cellPadding="0" width="170" border="0">
                 <tr>
-                    <td valign="top" align="middle">
+                    <td valign="top" align="middle" style="position: relative;top: 50px">
                         <table id=child1 style="DISPLaY: block;" cellSpacing=0 cellPadding=0 width=150 border=0>
                             <tr height=20>
                                 <td>
@@ -88,6 +88,7 @@
                                        href="${pageContext.request.contextPath}/user/userInfo" target="right">个人中心</a>
                                 </td>
                             </tr>
+                            <tr height=20></tr>
                             <tr height=20>
                                 <td>
                                     <a style="cursor: pointer;font-size: 15px;color: white;margin-left: 35px"
@@ -95,9 +96,10 @@
                                        target="right">我的订单</a>
                                 </td>
                             </tr>
+                            <tr height=20></tr>
                             <tr height=20>
                                 <td>
-                                    <a style="cursor: pointer;font-size: 15px;color:white;margin-left: 35px;background-color: #1E6BAE;
+                                    <a style="cursor: pointer;font-size: 15px;color:white;margin-left: 35px;background-color: #1E6BAE;"
                                        href="${pageContext.request.contextPath}/user/userGoSuccessOrder" target="right">历史订单</a>
                                 </td>
                             </tr>

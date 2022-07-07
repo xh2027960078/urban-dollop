@@ -76,13 +76,7 @@
     </ul>
     <%--    </div>--%>
 </div>
-<div class="container login">
-    <div class="span12">
-        <div class="ad">
-            <img src="${pageContext.request.contextPath}/image/loginIMG.jpg" width="500" height="330" alt="会员登录"
-                 title="会员登录"/>
-        </div>
-    </div>
+<div class="container login" style="display: flex;justify-content: center;align-items: center">
     <div class="span12 last">
         <div class="wrap">
             <div class="main">

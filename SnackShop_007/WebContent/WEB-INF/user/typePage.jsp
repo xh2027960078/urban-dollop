@@ -85,14 +85,6 @@
 	<div class="container index">
 		<div class="span24">
 			<div id="hotProduct" class="hotProduct clearfix">
-<%--				<div class="title">--%>
-<%--					<strong>${TypeSnackTitle}</strong>--%>
-<%--				</div>--%>
-<%--				<div class="tab" style="text-align: right;">--%>
-<%--					<input type="hidden" value="${TypeNum}" id="TypeNum"> <input--%>
-<%--						type="text" id="snackName"> <span id="typeSearch"--%>
-<%--						style="font-size: 12px; cursor: pointer">搜索</span>--%>
-<%--				</div>--%>
 				<div class="tab" style="width: 100%;background-color: #1E6BAE">
 					<div style="text-align: left;color: white;font-size: 20px;" class="title"><strong>${TypeSnackTitle}</strong></div>
 					<div style="text-align: right;"><input type="hidden" value="${TypeNum}" id="TypeNum">

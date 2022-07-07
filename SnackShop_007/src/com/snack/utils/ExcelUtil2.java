@@ -30,30 +30,6 @@ public class ExcelUtil2 {
         createHead(workbook, sheet, columns);
         try {
             createData(workbook, sheet, columns, list);
-            //列宽度自适应-影响性能
-            /*for (int columnNum = 0; columnNum <= list.size(); columnNum++) {
-                int columnWidth = sheet.getColumnWidth(columnNum) / 256;
-                for (int rowNum = 0; rowNum < sheet.getLastRowNum(); rowNum++) {
-                    Row currentRow;
-                    //当前行未被使用过
-                    if (sheet.getRow(rowNum) == null) {
-                        currentRow = sheet.createRow(rowNum);
-                    } else {
-                        currentRow = sheet.getRow(rowNum);
-                    }
-
-                    if (currentRow.getCell(columnNum) != null) {
-                        Cell currentCell = currentRow.getCell(columnNum);
-                        if (currentCell.getCellType() == Cell.CELL_TYPE_STRING) {
-                            int length = currentCell.getStringCellValue().getBytes().length;
-                            if (columnWidth < length) {
-                                columnWidth = length;
-                            }
-                        }
-                    }
-                }
-                sheet.setColumnWidth(columnNum, columnWidth * 256);
-            }*/
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -66,17 +42,7 @@ public class ExcelUtil2 {
         font.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD);
 
         CellStyle style = workbook.createCellStyle();
-//		//设置单元格显示颜色
-//		cs.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
-//		//样式的填充类型
-//		cs.setFillPattern(CellStyle.SOLID_FOREGROUND);
-        //居中对齐
         style.setAlignment(CellStyle.ALIGN_CENTER);
-        //设置边框
-//		style.setBorderTop((short) 1);
-//		style.setBorderBottom((short) 1);
-//		style.setBorderLeft((short) 1);
-//		style.setBorderRight((short) 1);
         style.setFont(font);
 
         Row row = sheet.createRow(0);
