@@ -132,10 +132,6 @@
 							<dd>
 								<input type="hidden" name="sId" value="${sck.sId}"/>
 								<input id="sNumber" name="sNumber" value="1" maxlength="4" onpaste="return false;" type="text"/>
-<%--								<div>--%>
-<%--									<span id="increase" class="increase">&nbsp;</span>--%>
-<%--									<span id="decrease" class="decrease">&nbsp;</span>--%>
-<%--								</div>--%>
 							</dd>
 							<dd>件</dd>
 						</dl>

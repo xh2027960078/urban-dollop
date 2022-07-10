@@ -167,7 +167,7 @@
 								<td>支付金额:<input type="hidden" id="payoId"></td>
 								<td><input type="text" disabled="disabled" id="payNumber"></td>
 							</tr>
-							<tr>
+							<tr style="display: none;">
 								<td>您的钱包:</td>
 								<td><input type="text" disabled="disabled" id="uMoney"></td>
 							</tr>

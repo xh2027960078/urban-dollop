@@ -92,17 +92,21 @@ var integralModule = angular.module("carApp",[]);
    	 				success: function(result){
 	   	 				result = $.parseJSON(result);
    			        	if(result.errCode=='000000'){
-   			        		swal("支付成功!","success");
-   			        		swal({ 
-   			        		  title: "支付成功!", 
-   			        		  type: "success",
-   			        		  confirmButtonColor: "#DD6B55",
-   			        		  confirmButtonText: "确定", 
-   			        		  closeOnConfirm: false
-   			        		},
-   			        		function(){
-   			        			location.href="/SnackShop"+"/shop/index";
-   			        		});
+   			        		// swal("支付成功!","success");
+   			        		// swal({
+   			        		//   title: "支付成功!",
+   			        		//   type: "success",
+   			        		//   confirmButtonColor: "#DD6B55",
+   			        		//   confirmButtonText: "确定",
+   			        		//   closeOnConfirm: false
+   			        		// },
+   			        		// function(){
+   			        		// 	location.href="/SnackShop"+"/shop/index";
+   			        		// });
+							swal({},
+								function(){
+									location.href="/SnackShop"+"/shop/index";
+								});
    			        	}else if(result.errCode=='000001'){
    			        		swal("请输入正确的密码!");
    			        	}

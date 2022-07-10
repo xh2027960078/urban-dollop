@@ -20,11 +20,11 @@
      <script src="${pageContext.request.contextPath}/js/libs/angular.min.js"></script>
   </head>
   <body class="easyui-layout" ng-App="adminMainApp" ng-controller="adminMainCtrl">
-	<div data-options="region:'north'" style="height:100px;text-align: center;">
-	       <span style="font-size:50px;" >零零柒零食商城后台管理</span>
+	<div data-options="region:'north'" style="height:20px;text-align: center;">
 	      <div style="font-size: 15px;position:absolute; right:0; bottom:0;">
 			<span>欢迎:${sessionScope.adminName}</span>|
 			<span id="loginOut" style="cursor:pointer">[退出]</span>
+			<span style="cursor:pointer;"><a href="${pageContext.request.contextPath}/shop/index">回到首页</a></span>
 		  </div>
 	</div>
 	<div data-options="region:'west',split:true,title:'菜单'" style="width:150px;padding:10px;">
@@ -86,7 +86,7 @@
 			</c:if>
 		</div>
     </div>
-	<div data-options="region:'center',title:'内容'"><iframe frameborder="0" height="100%" width="100%" scrolling="no" name="center"></iframe></div>
+	<div data-options="region:'center'"><iframe frameborder="0" height="100%" width="100%" scrolling="no" name="center"></iframe></div>
 </body> 
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/views/adminJs/adminMain.js"></script>
 </html>

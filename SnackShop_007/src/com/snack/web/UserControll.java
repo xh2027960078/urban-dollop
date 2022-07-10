@@ -95,57 +95,13 @@ public class UserControll {
 	public String gotoUserInfo(){
 		return "user/userInfo";
 	}
-	
-//	//跳转个人积分页面
-//	@RequestMapping("userIntegral")
-//	public String userIntegral(){
-//		return "user/integral";
-//	}
-//
+
 	//跳转个人图片
 	@RequestMapping("userGerenImg")
 	public String userGerenImg(){
 		return "user/gerenImg";
 	}
-	
-//	//加载个人积分
-//	@RequestMapping("userIntegralLimit")
-//	@ResponseBody
-//	public DataTables userIntegralLimit(HttpServletRequest request,int start,int length){
-//		Map<Object,Object> map=new HashMap<Object, Object>();
-//		map.put("uId",request.getSession().getAttribute("frontuserId"));
-//		map.put("pageStart",start);
-//		map.put("pageSize",length);
-//		PageHelp<Integral> pageHelp= userService.selectIntegralLimit(map);
-//		DataTables datatable=new DataTables();
-//		datatable.setData(pageHelp.getList());
-//		datatable.setRecordsFiltered(pageHelp.getRecord());
-//		datatable.setRecordsTotal(pageHelp.getRecord());
-//		return datatable;
-//	}
-	
-//	//跳转个人账户页面
-//	@RequestMapping("userAccount")
-//	public String userAccount(){
-//		return "user/account";
-//	}
-	
-//	//加载个人积分
-//	@RequestMapping("userAccountLimit")
-//	@ResponseBody
-//	public DataTables userAccountLimit(HttpServletRequest request,int start,int length){
-//		Map<Object,Object> map=new HashMap<Object, Object>();
-//		map.put("uId",request.getSession().getAttribute("frontuserId"));
-//		map.put("pageStart",start);
-//		map.put("pageSize",length);
-//		PageHelp<Account> pageHelp= userService.selectAccountLimit(map);
-//		DataTables datatable=new DataTables();
-//		datatable.setData(pageHelp.getList());
-//		datatable.setRecordsFiltered(pageHelp.getRecord());
-//		datatable.setRecordsTotal(pageHelp.getRecord());
-//		return datatable;
-//	}
-	
+
 	//获得金额
 	@RequestMapping("getMoneyAcount")
 	@ResponseBody
