@@ -21,11 +21,6 @@
 			<td>密码:</td>
 	    	<td><input id="adPassword" type="text" class="form-control"></td>
 		</tr>
-		<tr>
-			<td>角色:</td>
-	    	<td><input id="roleIdT" type="hidden">
-	    	<input id="roleId" type="text" disabled="disabled" class="form-control"></td>
-		</tr>
 		<tr><td colspan="2"><button id="changeAdminUser" class="btn btn-primary">修改</button></td></tr>
 	</table>
 </body>

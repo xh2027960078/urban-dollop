@@ -92,7 +92,7 @@ var integralModule = angular.module("carApp",[]);
    	 				success: function(result){
 	   	 				result = $.parseJSON(result);
    			        	if(result.errCode=='000000'){
-   			        		// swal("支付成功!","success");
+   			        		swal("支付成功!");
    			        		// swal({
    			        		//   title: "支付成功!",
    			        		//   type: "success",

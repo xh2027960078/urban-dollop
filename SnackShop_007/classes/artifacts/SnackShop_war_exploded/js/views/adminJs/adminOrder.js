@@ -151,12 +151,12 @@ var integralModule = angular.module("adminOrderApp",[]);
 		   	 			});
 	   	            }) 
 				});
-				
-				//导出报表
-				$('#table_id_example').on('click', '.outOrderDetail', function () {
-					var params=$(this).attr('data-id');
-					window.open("/SnackShop/admin/order/outExcelOrder?oId=" +params);
-				});
+				//
+				// //导出报表
+				// $('#table_id_example').on('click', '.outOrderDetail', function () {
+				// 	var params=$(this).attr('data-id');
+				// 	window.open("/SnackShop/admin/order/outExcelOrder?oId=" +params);
+				// });
 				
 				
 				//加载详情修改
@@ -347,7 +347,7 @@ var integralModule = angular.module("adminOrderApp",[]);
 					    		}else if(row.oType==-2){
 					    			html=html+"<span style='cursor:pointer' class='update' data-id='"+ row.rId+ "'>修改&nbsp;&nbsp;</span>"
 					    			+"<span style='cursor:pointer' class='pushSnack' data-id='"+ row.id+ "'>确认发货&nbsp;&nbsp;</span>"
-					    			+"<span style='cursor:pointer' class='outOrderDetail' data-id='"+ row.oId+ "'>报表</span>";
+					    			// +"<span style='cursor:pointer' class='outOrderDetail' data-id='"+ row.oId+ "'>报表</span>";
 					    			return html;
 					    		}else{
 					    			return html;

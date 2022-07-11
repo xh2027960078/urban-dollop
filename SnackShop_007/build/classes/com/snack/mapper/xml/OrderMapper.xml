@@ -238,11 +238,11 @@
   </update>
   <select id="selectMyOrderLimit" resultMap="BaseResultMapTwo" parameterType="java.util.Map">
   	SELECT * from `order` o INNER JOIN receiptinfo r
-	on o.o_id=r.o_id where o.u_id=#{uId} and o.o_type!=1 ORDER BY o.o_time and o.o_type=0 DESC LIMIT #{pageStart},#{pageSize} 
+	on o.o_id=r.o_id where o.u_id=#{uId} and o.o_type!=1 ORDER BY o.o_time DESC LIMIT #{pageStart},#{pageSize}
   </select>
   <select id="selectMySuccessOrderLimit" resultMap="BaseResultMapTwo" parameterType="java.util.Map">
   	SELECT * from `order` o INNER JOIN receiptinfo r
-	on o.o_id=r.o_id where o.u_id=#{uId} and o.o_type=1 ORDER BY o.o_time DESC LIMIT #{pageStart},#{pageSize} 
+	on o.o_id=r.o_id where o.u_id=#{uId} and o.o_type=1 ORDER BY o.o_time DESC LIMIT #{pageStart},#{pageSize}
   </select>
   <select id="selectAdminOrderLimit" resultType="com.snack.model.domain.DoAdminOrder" parameterType="java.util.Map">
   	SELECT id ,o.o_id AS oId,o.u_id as uId,o.e_id as eId,
