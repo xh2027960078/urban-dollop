@@ -75,10 +75,6 @@
 								<td>支付金额:<input type="hidden" id="payoId"></td>
 								<td><input type="text" disabled="disabled" id="payNumber"></td>
 							</tr>
-<%--							<tr>--%>
-<%--								<td>您的钱包:</td>--%>
-<%--								<td><input type="text" disabled="disabled" id="uMoney"></td>--%>
-<%--							</tr>--%>
 							<tr>
 								<td>输入密码:</td>
 								<td><input type="password" id="uPasword"></td>

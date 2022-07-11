@@ -65,7 +65,7 @@ var integralModule = angular.module("adminUserinfoApp",[]);
 	   	 				dataType:"json",
 	   	 				success: function (result) {
 	   			        	result = $.parseJSON(result);
-	   			        	if(result.errCode='000000'){
+	   			        	if(true){
 	   			        		$("#uId").val(result.data.uId);
 	   			        		$("#uUsernameTwo").val(result.data.uUsername);
 	   			        		$("#uPassword").val(result.data.uPassword);
@@ -110,7 +110,7 @@ var integralModule = angular.module("adminUserinfoApp",[]);
 	   	 				dataType:"json",
 	   	 				success: function(result){
 		   	 				result = $.parseJSON(result);
-	   			        	if(result.errCode='000000'){
+	   			        	if(true){
 	   			        		swal("删除成功!","success");
 	   			        		createTable();
 	   			        	}else{

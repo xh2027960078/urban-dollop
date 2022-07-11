@@ -35,7 +35,7 @@ var integralModule = angular.module("adminAdminApp",[]);
 	   	 				dataType:"json",
 	   	 				success: function (result) {
 		   	 				result = $.parseJSON(result);
-	   			        	if(result.errCode='000000'){
+	   			        	if(true){
 	   			        		swal("新建成功!","success");
 	   			        		$('#newAdminModal').modal('hide');
 	   			        		createTable();
@@ -65,7 +65,7 @@ var integralModule = angular.module("adminAdminApp",[]);
    			            transformRequest: $scope.processParams
    			        }).success(function (result) {
    			        	result = $.parseJSON(result);
-   			        	if(result.errCode='000000'){
+   			        	if(true){
    			        		swal("修改成功!","success");
    			        		$('#updateAdminModal').modal('hide');
    			        		createTable();
@@ -88,7 +88,7 @@ var integralModule = angular.module("adminAdminApp",[]);
 	   	 				dataType:"json",
 	   	 				success: function (result) {
 	   	 				result = $.parseJSON(result);
-   			        	if(result.errCode='000000'){
+   			        	if(true){
    			        		$("#adIdTwo").val(result.data.adId);
    			        		$("#adPasswordTwo").val(result.data.adPassword);
    			        		$("#adUsernameTwo").val(result.data.adUsername);
@@ -119,37 +119,36 @@ var integralModule = angular.module("adminAdminApp",[]);
 				$('#table_id_example').on('click', '.delete', function () {
 					var params=$(this).attr('data-id');
 					swal({
-	   	                title: "确定删除？",
-	   	                type: "warning",
-	   	                showCancelButton: true, 
-	   	                confirmButtonColor: "#DD6B55",
-	   	                confirmButtonText: "确定", 
-	   	                cancelButtonText: "取消",
-	   	                closeOnConfirm: false,
-	   	            },function(){
-	   	            	$.ajax({
-	   	 				url:'/SnackShop'+'/admin/user/delAdminById',
-	   	 				data:{
-	   	 			    	"adId":params
-	   	 			    },
-	   	 				type:'post',
-	   	 				dataType:"json",
-	   	 				success: function(result){
-	   	 				result = $.parseJSON(result);
-	   			        	if(result.errCode='000000'){
-	   			        		swal("删除成功!","success");
-	   			        		createTable();
-	   			        	}else{
-	   			        	    swal("删除失败!","error");
-	   			        	    createTable();
-	   			        	}
-	   	 				},
-		   	 			error:function(){
-		   	 			    swal("没有权限!","error");
-	   	 				}
-	   	 			});
-	   	            }) 
-                });
+						title: "确定删除？",
+						showCancelButton: true,
+						confirmButtonColor: "#DD6B55",
+						confirmButtonText: "确定",
+						cancelButtonText: "取消",
+						closeOnConfirm: false,
+					},function(){
+						$.ajax({
+							url:'/SnackShop'+'/admin/snackinfo/delAdminUserinfo',
+							data:{
+								"sId":params
+							},
+							type:'post',
+							dataType:"json",
+							success: function(result){
+								result = $.parseJSON(result);
+								if(result.errCode='000000'){
+									swal("删除成功!","success");
+									createTable();
+								}else{
+									swal("删除失败!","error");
+									createTable();
+								}
+							},
+							error:function(){
+								swal("没有权限!","error");
+							}
+						});
+					})
+				});
 				
 				function getDateNew(){
 		        	return {  

@@ -110,7 +110,7 @@ var integralModule = angular.module("myOrderApp",[]);
 
 				//支付
 				$('#comfirPay').on('click', function () {
-					if($("#uMoney").val()-$("#payNumber").val()>=0){
+					if(true){
 					if($("#uPasword").val()!=''){
 						$.ajax({
 		   	 				url:'/SnackShop'+'/user/userOrderPayMoneyConfirm',
@@ -125,19 +125,19 @@ var integralModule = angular.module("myOrderApp",[]);
 		   	 				success: function(result){
 			   	 				result = $.parseJSON(result);
 		   			        	if(result.errCode=='000000'){
-		   			        		swal("支付成功!","success");
+		   			        		swal("支付成功!");
 		   			        		$('#payMoneyModal').modal('hide');
 		   			        		createTable();
 		   			        	}else if(result.errCode=='000001'){
-		   			        		swal("请输入正确的密码!","error");
+		   			        		swal("请输入正确的密码!");
 		   			        	}
 		   	 				}
 		   	 			});
 					}else{
-						swal("请输入支付密码!","warning");
+						swal("请输入支付密码!");
 					}
 					}else{
-						swal("您的钱包余额不足!","warning");
+						swal("您的钱包余额不足!");
 					}
 				});
 				
@@ -212,6 +212,7 @@ var integralModule = angular.module("myOrderApp",[]);
 					    		}
 			    		    }},
 					    	{ data:'oId',render: function ( data, type, row ) {
+					    		//-1:未发货；1:完成，0：已发货
 					    		if(row.oType==0){
 				    		        return "<span class='select' data-id='"+ row.oId+ "'>查看&nbsp;&nbsp;</span>"
 				    		        +"<span class='update' data-id='"+ row.id+ "'>确认收货</span>";
@@ -222,7 +223,7 @@ var integralModule = angular.module("myOrderApp",[]);
 					    		}else{
 					    			return "<span class='select' data-id='"+ row.oId+ "'>查看&nbsp;&nbsp;</span>"
 					    		}
-					    		
+
 			    		    }}
 					    ]
 					});

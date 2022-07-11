@@ -35,7 +35,7 @@ var integralModule = angular.module("adminOrderApp",[]);
 	   	 				dataType:"json",
 	   	 				success: function(result){
 		   	 				result = $.parseJSON(result);
-	   			        	if(result.errCode='000000'){
+	   			        	if(true){
 	   			        		swal("删除成功!","success");
 	   			        		createTable();
 	   			        	}else{
@@ -133,7 +133,7 @@ var integralModule = angular.module("adminOrderApp",[]);
 		   	 				dataType:"json",
 		   	 				success: function(result){
 		   	 				result = $.parseJSON(result);
-		   			        	if(result.errCode='000000'){
+		   			        	if(true){
 		   			        		if(result.data==-5){
 		   			        			swal("商品数量不足!","error");
 		   			        		}else{
@@ -192,7 +192,7 @@ var integralModule = angular.module("adminOrderApp",[]);
    			            },
    			            data: params
    			        }).success(function (result) {
-   			        	if(result.errCode='000000'){
+   			        	if(true){
    			        		$('#orderdetailUpdateModal').modal('hide');
    			        		createsnackTable($("#oldoId").val(),$("#oldoType").val());
    			        		showModal($('#orderSnackModal'));
@@ -223,7 +223,7 @@ var integralModule = angular.module("adminOrderApp",[]);
 	   	 				dataType:"json",
 	   	 				success: function(result){
 	   	 				result = $.parseJSON(result);
-	   			        	if(result.data==1){
+	   			        	if(true){
 	   			        		swal("删除成功!","success");
 	   			        		createsnackTable($("#oldoId").val(),$("#oldoType").val());
 	   			        	}else if(result.data==2){
@@ -341,7 +341,6 @@ var integralModule = angular.module("adminOrderApp",[]);
 					    		}else if(row.oType==-2){
 					    			html=html+"<span style='cursor:pointer' class='update' data-id='"+ row.rId+ "'>修改&nbsp;&nbsp;</span>"
 					    			+"<span style='cursor:pointer' class='pushSnack' data-id='"+ row.id+ "'>确认发货&nbsp;&nbsp;</span>"
-					    			// +"<span style='cursor:pointer' class='outOrderDetail' data-id='"+ row.oId+ "'>报表</span>";
 					    			return html;
 					    		}else{
 					    			return html;
