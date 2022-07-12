@@ -11,7 +11,7 @@
  Target Server Version : 80025
  File Encoding         : 65001
 
- Date: 11/07/2022 17:09:46
+ Date: 12/07/2022 11:31:56
 */
 
 SET NAMES utf8mb4;
@@ -33,6 +33,7 @@ CREATE TABLE `admin`  (
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
+INSERT INTO `admin` VALUES (1, 'xh666', 'xuhui666', 2);
 INSERT INTO `admin` VALUES (2, 'admin', 'admin', 1);
 
 -- ----------------------------
@@ -90,28 +91,8 @@ CREATE TABLE `order`  (
 -- ----------------------------
 -- Records of order
 -- ----------------------------
-INSERT INTO `order` VALUES (84, '201803272559', 12, 2, '2018-03-27', 1);
-INSERT INTO `order` VALUES (125, '201811024234', 17, 1, '2018-11-02', 0);
-INSERT INTO `order` VALUES (126, '201811045281', 18, 2, '2018-11-04', 0);
-INSERT INTO `order` VALUES (127, '201812053444', 19, 2, '2018-12-05', 1);
-INSERT INTO `order` VALUES (128, '201812074630', 20, 2, '2018-12-07', 0);
-INSERT INTO `order` VALUES (129, '201812075605', 20, NULL, '2018-12-07', -2);
-INSERT INTO `order` VALUES (132, '201812078303', 20, 2, '2018-12-07', 1);
-INSERT INTO `order` VALUES (133, '202206078903', 21, NULL, '2022-06-07', -2);
-INSERT INTO `order` VALUES (134, '202206264457', 22, 2, '2022-06-26', 1);
-INSERT INTO `order` VALUES (135, '202206281359', 21, 2, '2022-06-28', 0);
-INSERT INTO `order` VALUES (136, '202206298395', 21, 2, '2022-06-29', 0);
-INSERT INTO `order` VALUES (137, '202206309935', 21, 2, '2022-06-30', 0);
-INSERT INTO `order` VALUES (140, '202207044621', 23, 2, '2022-07-04', 0);
-INSERT INTO `order` VALUES (141, '202207053562', 22, 2, '2022-07-05', 1);
-INSERT INTO `order` VALUES (142, '202207053642', 22, 2, '2022-07-05', 1);
-INSERT INTO `order` VALUES (144, '202207065592', 22, 2, '2022-07-06', 1);
-INSERT INTO `order` VALUES (148, '202207103126', 22, NULL, '2022-07-10', -2);
-INSERT INTO `order` VALUES (151, '202207107954', 22, NULL, '2022-07-10', -2);
-INSERT INTO `order` VALUES (152, '202207109758', 22, NULL, '2022-07-10', -2);
-INSERT INTO `order` VALUES (153, '202207103078', 22, NULL, '2022-07-10', -2);
-INSERT INTO `order` VALUES (155, '202207104644', 22, 2, '2022-07-10', 1);
-INSERT INTO `order` VALUES (156, '202207104213', 22, NULL, '2022-07-10', -2);
+INSERT INTO `order` VALUES (163, '202207125691', 22, 1, '2022-07-12', 1);
+INSERT INTO `order` VALUES (164, '202207122509', 22, 2, '2022-07-12', 0);
 
 -- ----------------------------
 -- Table structure for orderdetail
@@ -129,41 +110,8 @@ CREATE TABLE `orderdetail`  (
 -- ----------------------------
 -- Records of orderdetail
 -- ----------------------------
-INSERT INTO `orderdetail` VALUES (94, '201803272559', 20, 2, 10);
-INSERT INTO `orderdetail` VALUES (154, '201811024234', 26, 1, 16);
-INSERT INTO `orderdetail` VALUES (155, '201811024234', 25, 1, 1);
-INSERT INTO `orderdetail` VALUES (156, '201811045281', 82, 2, 10);
-INSERT INTO `orderdetail` VALUES (157, '201812053444', 39, 2, 20);
-INSERT INTO `orderdetail` VALUES (158, '201812053444', 32, 3, 10);
-INSERT INTO `orderdetail` VALUES (159, '201812074630', 67, 3, 16);
-INSERT INTO `orderdetail` VALUES (160, '201812074630', 55, 2, 9);
-INSERT INTO `orderdetail` VALUES (161, '201812074630', 39, 1, 20);
-INSERT INTO `orderdetail` VALUES (162, '201812075605', 49, 1, 14);
-INSERT INTO `orderdetail` VALUES (163, '201812075605', 45, 1, 27);
-INSERT INTO `orderdetail` VALUES (164, '201812075605', 30, 1, 8);
-INSERT INTO `orderdetail` VALUES (168, '201812078303', 66, 1, 16);
-INSERT INTO `orderdetail` VALUES (169, '201812078303', 34, 1, 12);
-INSERT INTO `orderdetail` VALUES (170, '202206078903', 81, 1, 2.1);
-INSERT INTO `orderdetail` VALUES (171, '202206078903', 40, 2, 12);
-INSERT INTO `orderdetail` VALUES (172, '202206264457', 32, 1, 10);
-INSERT INTO `orderdetail` VALUES (173, '202206264457', 80, 2, 7);
-INSERT INTO `orderdetail` VALUES (174, '202206281359', 54, 1, 24);
-INSERT INTO `orderdetail` VALUES (175, '202206298395', 54, 1, 24);
-INSERT INTO `orderdetail` VALUES (176, '202206298395', 42, 1, 12);
-INSERT INTO `orderdetail` VALUES (177, '202206309935', 58, 1, 45);
-INSERT INTO `orderdetail` VALUES (178, '202206309935', 87, 1, 48.6);
-INSERT INTO `orderdetail` VALUES (179, '202206309935', 88, 1, 19.900000000000002);
-INSERT INTO `orderdetail` VALUES (182, '202207044621', 88, 1, 19.900000000000002);
-INSERT INTO `orderdetail` VALUES (183, '202207053562', 54, 1, 24);
-INSERT INTO `orderdetail` VALUES (184, '202207053642', 94, 1, 799.2);
-INSERT INTO `orderdetail` VALUES (187, '202207065592', 94, 1, 799.2);
-INSERT INTO `orderdetail` VALUES (192, '202207103126', 92, 1, 19.900000000000002);
-INSERT INTO `orderdetail` VALUES (196, '202207107954', 92, 1, 19.900000000000002);
-INSERT INTO `orderdetail` VALUES (197, '202207109758', 95, 1, 50);
-INSERT INTO `orderdetail` VALUES (198, '202207103078', 85, 1, 179.10000000000002);
-INSERT INTO `orderdetail` VALUES (200, '202207104644', 94, 1, 799.2);
-INSERT INTO `orderdetail` VALUES (201, '202207104644', 25, 1, 1);
-INSERT INTO `orderdetail` VALUES (202, '202207104213', 94, 1, 799.2);
+INSERT INTO `orderdetail` VALUES (210, '202207125691', 97, 1, 16);
+INSERT INTO `orderdetail` VALUES (211, '202207122509', 132, 2, 64);
 
 -- ----------------------------
 -- Table structure for permission
@@ -215,63 +163,9 @@ CREATE TABLE `receiptinfo`  (
 -- ----------------------------
 -- Records of receiptinfo
 -- ----------------------------
-INSERT INTO `receiptinfo` VALUES (139, '202206078903', '徐辉', '13719203556', '长沙市');
-INSERT INTO `receiptinfo` VALUES (140, '202206264457', '徐辉', '13719203558', '长沙市');
-INSERT INTO `receiptinfo` VALUES (141, '202206281359', '徐辉', '13719203558', '长沙市');
-INSERT INTO `receiptinfo` VALUES (142, '202206298395', '徐辉', '13719203558', '长沙市');
-INSERT INTO `receiptinfo` VALUES (143, '202206309935', '徐辉', '13719203558', '长沙市');
-INSERT INTO `receiptinfo` VALUES (146, '202207044621', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (147, '202207053562', '徐辉', '15608499956', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (148, '202207053642', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (150, '202207065592', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (154, '202207103126', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (156, '202207107446', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (157, '202207104909', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (158, '202207106848', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (159, '202207104150', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (160, '202207109612', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (161, '202207103011', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (162, '202207101638', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (163, '202207104523', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (164, '202207108951', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (165, '202207107579', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (166, '202207104564', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (167, '202207102225', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (168, '202207107990', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (169, '202207109683', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (170, '202207101718', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (171, '202207105704', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (172, '202207106770', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (173, '202207104229', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (174, '202207107328', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (175, '202207106978', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (176, '202207107546', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (177, '202207107645', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (178, '202207103298', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (179, '202207102281', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (180, '202207101275', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (181, '202207107924', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (182, '202207107527', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (183, '202207101681', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (184, '202207102036', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (185, '202207103816', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (186, '202207103740', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (187, '202207101194', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (188, '202207109772', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (189, '202207108583', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (190, '202207109544', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (191, '202207104332', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (192, '202207107365', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (193, '202207109073', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (194, '202207108628', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (195, '202207109928', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (196, '202207106212', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (197, '202207102807', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (199, '202207107954', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (200, '202207109758', '徐辉', '13719203558', '长汉化');
-INSERT INTO `receiptinfo` VALUES (201, '202207103078', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (203, '202207104644', '徐辉', '13719203558', '长沙市撒擦');
-INSERT INTO `receiptinfo` VALUES (204, '202207104213', '徐辉', '13719203553', '长沙市撒擦');
+INSERT INTO `receiptinfo` VALUES (216, '202207125691', '徐辉', '13719203558', '长沙市');
+INSERT INTO `receiptinfo` VALUES (217, '202207125996', '徐辉', '13719203558', '中国北京海淀区上地十街10号百度大厦');
+INSERT INTO `receiptinfo` VALUES (218, '202207122509', '徐辉', '13719203558', '中国北京海淀区上地十街10号百度大厦');
 
 -- ----------------------------
 -- Table structure for record
@@ -285,70 +179,13 @@ CREATE TABLE `record`  (
   PRIMARY KEY (`record_id`) USING BTREE,
   INDEX `s_idfk`(`s_id`) USING BTREE,
   CONSTRAINT `s_idfk` FOREIGN KEY (`s_id`) REFERENCES `snackinfo` (`s_id`) ON DELETE RESTRICT ON UPDATE RESTRICT
-) ENGINE = InnoDB AUTO_INCREMENT = 71 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 73 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of record
 -- ----------------------------
-INSERT INTO `record` VALUES (13, 20, '2018-02-16', 2);
-INSERT INTO `record` VALUES (14, 23, '2018-03-27', 4);
-INSERT INTO `record` VALUES (15, 20, '2018-03-27', 6);
-INSERT INTO `record` VALUES (16, 20, '2018-03-27', 2);
-INSERT INTO `record` VALUES (17, 23, '2018-03-27', 1);
-INSERT INTO `record` VALUES (18, 21, '2018-03-27', 1);
-INSERT INTO `record` VALUES (19, 20, '2018-03-27', 2);
-INSERT INTO `record` VALUES (20, 21, '2018-03-27', 1);
-INSERT INTO `record` VALUES (21, 24, '2018-03-27', 3);
-INSERT INTO `record` VALUES (22, 23, '2018-03-28', 1);
-INSERT INTO `record` VALUES (23, 21, '2018-03-28', 10);
-INSERT INTO `record` VALUES (24, 21, '2018-03-28', 1);
-INSERT INTO `record` VALUES (25, 20, '2018-03-28', 1);
-INSERT INTO `record` VALUES (26, 24, '2018-03-28', 1);
-INSERT INTO `record` VALUES (27, 24, '2018-03-28', 1);
-INSERT INTO `record` VALUES (28, 23, '2018-03-31', 1);
-INSERT INTO `record` VALUES (29, 23, '2018-04-01', 1);
-INSERT INTO `record` VALUES (30, 20, '2018-04-01', 6);
-INSERT INTO `record` VALUES (31, 24, '2018-04-01', 3);
-INSERT INTO `record` VALUES (32, 20, '2018-04-01', 1);
-INSERT INTO `record` VALUES (33, 23, '2018-04-01', 1);
-INSERT INTO `record` VALUES (34, 62, '2018-04-01', 4);
-INSERT INTO `record` VALUES (35, 27, '2018-04-01', 5);
-INSERT INTO `record` VALUES (36, 45, '2018-04-01', 3);
-INSERT INTO `record` VALUES (37, 51, '2018-04-17', 4);
-INSERT INTO `record` VALUES (38, 34, '2018-04-17', 4);
-INSERT INTO `record` VALUES (39, 26, '2018-04-01', 8);
-INSERT INTO `record` VALUES (40, 30, '2018-04-01', 10);
-INSERT INTO `record` VALUES (41, 51, '2018-04-30', 3);
-INSERT INTO `record` VALUES (42, 33, '2018-04-30', 4);
-INSERT INTO `record` VALUES (43, 26, '2018-04-30', 3);
-INSERT INTO `record` VALUES (44, 56, '2018-04-30', 1);
-INSERT INTO `record` VALUES (45, 26, '2018-10-25', 1);
-INSERT INTO `record` VALUES (46, 26, '2018-10-25', 10);
-INSERT INTO `record` VALUES (47, 26, '2018-10-25', 22);
-INSERT INTO `record` VALUES (48, 34, '2018-10-25', 6);
-INSERT INTO `record` VALUES (49, 26, '2018-11-04', 1);
-INSERT INTO `record` VALUES (50, 25, '2018-11-04', 1);
-INSERT INTO `record` VALUES (51, 39, '2018-12-05', 2);
-INSERT INTO `record` VALUES (52, 32, '2018-12-05', 3);
-INSERT INTO `record` VALUES (54, 67, '2018-12-07', 3);
-INSERT INTO `record` VALUES (55, 55, '2018-12-07', 2);
-INSERT INTO `record` VALUES (56, 39, '2018-12-07', 1);
-INSERT INTO `record` VALUES (57, 66, '2018-12-07', 1);
-INSERT INTO `record` VALUES (58, 34, '2018-12-07', 1);
-INSERT INTO `record` VALUES (59, 88, '2022-07-05', 1);
-INSERT INTO `record` VALUES (60, 94, '2022-07-05', 1);
-INSERT INTO `record` VALUES (61, 54, '2022-07-05', 1);
-INSERT INTO `record` VALUES (62, 58, '2022-07-05', 1);
-INSERT INTO `record` VALUES (63, 87, '2022-07-05', 1);
-INSERT INTO `record` VALUES (64, 88, '2022-07-05', 1);
-INSERT INTO `record` VALUES (65, 54, '2022-07-05', 1);
-INSERT INTO `record` VALUES (66, 42, '2022-07-05', 1);
-INSERT INTO `record` VALUES (67, 54, '2022-07-05', 1);
-INSERT INTO `record` VALUES (68, 32, '2022-07-05', 1);
-INSERT INTO `record` VALUES (69, 80, '2022-07-05', 2);
-INSERT INTO `record` VALUES (70, 94, '2022-07-06', 1);
-INSERT INTO `record` VALUES (71, 94, '2022-07-11', 1);
-INSERT INTO `record` VALUES (72, 25, '2022-07-11', 1);
+INSERT INTO `record` VALUES (81, 97, '2022-07-12', 1);
+INSERT INTO `record` VALUES (82, 132, '2022-07-12', 2);
 
 -- ----------------------------
 -- Table structure for role
@@ -366,7 +203,6 @@ CREATE TABLE `role`  (
 -- ----------------------------
 INSERT INTO `role` VALUES (1, '超级管理员', '系统最高权限者(不可添加编辑)');
 INSERT INTO `role` VALUES (2, '普通管理员', '管理发货');
-INSERT INTO `role` VALUES (3, '小角色', '查看基本报表');
 
 -- ----------------------------
 -- Table structure for rolepermission
@@ -434,7 +270,6 @@ CREATE TABLE `snackinfo`  (
   `s_brand` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '品牌',
   `s_place` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '产地',
   `s_Imported` int NULL DEFAULT NULL COMMENT '是否进口',
-  `s_score` int NULL DEFAULT NULL COMMENT '积分',
   `s_pDate` date NULL DEFAULT NULL COMMENT '生产日期',
   `s_qDate` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '保质期',
   `state` int NULL DEFAULT NULL COMMENT '1---上架，0---草稿，-1--下架',
@@ -442,39 +277,56 @@ CREATE TABLE `snackinfo`  (
   `s_dese` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '详情',
   `s_type` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `s_number` int NULL DEFAULT NULL COMMENT '数量',
+  `s_score` int NULL DEFAULT NULL,
   PRIMARY KEY (`s_id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 96 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of snackinfo
 -- ----------------------------
-INSERT INTO `snackinfo` VALUES (20, '201803273550', '可乐', 10, '10', 'kele.jpg', '百事', '浙江', 1, NULL, '2018-03-15', '12', 1, '2018-03-27', '很好喝', '饮料类', 9980);
-INSERT INTO `snackinfo` VALUES (21, '201803276547', '瓜子', 20, '9', 'guazi.jpg', '恰恰', '浙江', 1, NULL, '2018-03-24', '12', 1, '2018-03-27', '好吃的瓜子', '其他', 989999);
-INSERT INTO `snackinfo` VALUES (23, '201803271694', '牛肉干', 100, '8', 'niurougan.jpg', '小辣椒', '浙江', 1, NULL, '2018-03-14', '12', 1, '2018-03-27', '好吃的牛肉干', '肉制类', 9991);
-INSERT INTO `snackinfo` VALUES (24, '201803272746', '提拉米酥', 100, '5', 'tilamishu.jpg', '大本营', '浙江', 0, NULL, '2018-03-14', '12', 1, '2018-03-27', '好吃的提拉米酥', '膨化类', 9992);
-INSERT INTO `snackinfo` VALUES (25, '201804174136', '咪咪', 10, '1', 'mimi.jpg', '咪咪', '广东', 0, NULL, '2018-04-15', '12', 1, '2018-04-17', '好吃的咪咪', '膨化类', 99998);
-INSERT INTO `snackinfo` VALUES (26, '201804172196', '乐事薯片', 20, '8', 'leshishupian.jpg', '乐事', '上海', 0, NULL, '2018-04-17', '12', 1, '2018-04-17', '好吃的薯片', '膨化类', 9955);
-INSERT INTO `snackinfo` VALUES (27, '201804171833', '黄金锅巴', 10, '7', 'huangjinguoba.jpg', '宇润', '安徽', 0, NULL, '2018-04-17', '12', 1, '2018-04-17', '好吃的锅巴', '膨化类', 9995);
-INSERT INTO `snackinfo` VALUES (30, '201804172485', '炒米', 10, '8', 'chaomi.jpg', '甘源', '浙江', 1, NULL, '2018-04-17', '12', 1, '2018-04-17', '好吃的炒米', '膨化类', 9000);
-INSERT INTO `snackinfo` VALUES (32, '201804174170', '妙妙果', 10, '10', 'miaomiaoguo.jpg', '妙妙', '浙江', 0, NULL, '2018-04-19', '12', 1, '2018-04-17', '好吃的妙妙果', '膨化类', 9996);
-INSERT INTO `snackinfo` VALUES (33, '201804173272', '虾味条', 20, '8', 'xiaweitiao.jpg', '旺旺', '浙江', 0, NULL, '2018-04-02', '12', 1, '2018-04-17', '好吃的虾味条', '膨化类', 119996);
-INSERT INTO `snackinfo` VALUES (34, '201804175107', '糙米卷', 20, '6', 'chumijuan.jpg', '旺旺', '浙江', 1, NULL, '2018-04-05', '12', 1, '2018-04-17', '好吃的糙米卷', '膨化类', 102291);
-INSERT INTO `snackinfo` VALUES (39, '201804178495', '山椒凤爪', 20, '10', 'shanjiaofengzhua.jpg', '旺旺', '浙江', 0, NULL, '2018-04-19', '12', 1, '2018-04-17', '好吃的山椒凤爪', '肉制类', 19997);
-INSERT INTO `snackinfo` VALUES (42, '201804177856', '小鸡腿', 20, '6', 'xiaojitui.jpg', '恰恰', '浙江', 0, NULL, '2018-04-11', '12', 1, '2018-04-17', '好吃的小鸡腿', '肉制类', 9999);
-INSERT INTO `snackinfo` VALUES (45, '201804177197', '牛肉片', 30, '9', 'niuroupian.jpg', '旺旺', '浙江', 0, NULL, '2018-04-20', '12', 1, '2018-04-17', '好吃的牛肉片', '肉制类', 9997);
-INSERT INTO `snackinfo` VALUES (51, '201804171818', '猪蹄', 30, '9', 'zhuti.jpg', '旺旺', '浙江', 0, NULL, '2018-04-13', '12', 1, '2018-04-17', '好吃的猪蹄', '肉制类', 9993);
-INSERT INTO `snackinfo` VALUES (54, '201804176090', '拿铁咖啡', 30, '8', 'natiekafei.jpg', '旺旺', '浙江', 0, NULL, '2018-03-07', '12', 1, '2018-04-17', '好吃的拿铁咖啡', '饮料类', 9997);
-INSERT INTO `snackinfo` VALUES (55, '201804177963', '啵乐乐', 10, '9', 'bolele.jpg', '旺旺', '浙江', 0, NULL, '2018-04-19', '12', 1, '2018-04-17', '好吃的啵乐乐', '饮料类', 9998);
-INSERT INTO `snackinfo` VALUES (56, '201804177044', '蜜柠水', 20, '6', 'miningshui.jpg', '旺旺', '浙江', 1, NULL, '2018-04-19', '12', 1, '2018-04-17', '好吃的蜜柠水', '饮料类', 9999);
-INSERT INTO `snackinfo` VALUES (58, '201804171125', '糖豆奶', 50, '9', 'tangdounai.jpg', '旺旺', '西藏', 0, NULL, '2018-04-19', '12', 1, '2018-04-17', '好吃的糖豆奶', '饮料类', 9999);
-INSERT INTO `snackinfo` VALUES (62, '201804171606', '牛乳茶', 10, '8', 'niurucha.jpg', '旺旺', '浙江', 0, NULL, '2018-04-05', '12', 1, '2018-04-17', '好吃的牛乳茶', '饮料类', 9996);
-INSERT INTO `snackinfo` VALUES (66, '201804177256', '椰汁', 20, '8', 'yezhi.jpg', '旺旺', '浙江', 0, NULL, '2018-04-19', '12', 1, '2018-04-17', '好吃的椰汁', '饮料类', 9999);
-INSERT INTO `snackinfo` VALUES (67, '201804177149', '牛奶果冻', 20, '8', 'niunaiguodong.jpg', '旺旺', '浙江', 0, NULL, '2018-04-17', '12', 1, '2018-04-17', '好吃的牛奶果冻', '其他', 9997);
-INSERT INTO `snackinfo` VALUES (73, '201804174125', '布丁原味', 20, '8', 'budingyuanwei.jpg', '旺旺', '浙江', 0, NULL, '2018-04-17', '18', 1, '2018-04-17', '好吃的布丁原味', '其他', 10000);
-INSERT INTO `snackinfo` VALUES (80, '201804173962', '秋葵', 10, '7', 'huamei.jpg', '旺旺', '浙江', 0, NULL, '2018-04-04', '12', 1, '2018-04-17', '好吃的秋葵', '其他', 9998);
-INSERT INTO `snackinfo` VALUES (87, '202206299674', '皇马', 162, '3', 'FIFA22_ID2973nmOM.jpg', '英雄联盟', '湖南', 0, NULL, '2002-12-18', '10年', 1, '2022-06-29', '蒙多哪里都能去', '肉制类', 100);
-INSERT INTO `snackinfo` VALUES (88, '202206296457', '蒙多', 199, '1', 'BitComet_vi0Glbd8kg.png', '英雄联盟', '湖南', 0, NULL, '2002-12-18', '10年', 1, '2022-06-29', '蒙多哪里都能去', '饮料类', 0);
-INSERT INTO `snackinfo` VALUES (94, '202207059116', '红', 999, '8', '屏幕截图 2022-07-02 205122.png', 'Viper', '英格兰', 0, NULL, '2010-12-18', '20', 1, '2022-07-05', '红黄牌', '肉制类', 97);
+INSERT INTO `snackinfo` VALUES (97, '202207128835', '培根', 20, '8', 'bacon_PNG10903.png', '荷美尔', '爱尔兰', 1, '2022-06-14', '6', 1, '2022-07-12', '培根又名烟肉（Bacon），是将猪肉经腌熏等加工的猪胸肉，或其他部位的肉熏制而成。烟肉一般被认为是早餐的头盘，将之切成薄片，放在锅子里烤或用油煎。烟肉味道极好，常用作为烹调，烟肉被视为肥胖的主要来源，但因为美国推出了低碳水化合物减肥法，烟肉致肥的观点渐渐改变', '肉制类', 499, NULL);
+INSERT INTO `snackinfo` VALUES (98, '202207124291', '口香糖', 10, '5', 'chewing_gum_PNG39.png', '大大', '湖南', 0, '2022-06-13', '12', 1, '2022-07-12', '口香糖是以天然树胶或甘油树脂为胶体的基础，加入糖浆、薄荷、甜味剂等调和压制而成的一种供人们放入口中嚼咬的糖。是很受世界人民喜爱的一种糖类。既可吃又可玩，深受儿童和青年人喜爱。同时也成为大部分年轻人的扮酷、时尚的新宠。在提升口腔健康的同时，通过咀嚼口香糖带来的面部肌肉运动，在认知学领域也具有多重功效', '其他', 999, NULL);
+INSERT INTO `snackinfo` VALUES (99, '202207124146', '可口可乐', 3, '', 'kele.jpg', '中粮', '上海', 0, '2022-07-09', '12', 1, '2022-07-12', '畅爽好喝，让此刻更带劲', '饮料类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (100, '202207126868', '赌神同款巧克力', 10, '8', 'chocolate_PNG97211.png', '德芙', '湖南', 0, '2022-06-13', '6', 1, '2022-07-12', '赌神周润发同款的巧克力', '其他', 100, NULL);
+INSERT INTO `snackinfo` VALUES (102, '202207125056', '爆米花', 10, 'null', 'popcorn_PNG40.png', '', '湖南', 0, '2022-06-17', '1', 1, '2022-07-12', '现爆现卖才是最香', '膨化类', 100, NULL);
+INSERT INTO `snackinfo` VALUES (103, '202207128829', '红牛', 8, '5', 'red_bull_PNG27.png', '红牛', '湖南', 0, '2022-07-13', '6', 1, '2022-07-12', '你真牛，红牛挺你', '饮料类', 500, NULL);
+INSERT INTO `snackinfo` VALUES (104, '202207127838', '蓝莓酸奶', 10, '8', 'yogurt_PNG15213.png', '蓝莓', '湖南', 0, '2022-07-15', '6', 1, '2022-07-12', '酸酸甜甜才健康', '饮料类', 100, NULL);
+INSERT INTO `snackinfo` VALUES (105, '202207126443', '吐司', 10, '5', 'toast_PNG116.png', '贼顶饱', '湖南', 0, '2022-07-09', '6', 1, '2022-07-12', '吐司，是英文toast的音译，粤语（广东话）叫多士，实际上就是用长方形带盖或不带盖的烤听制作的听型面包。 用带盖烤听烤出的面包经切片后呈正方形，夹入火腿或蔬菜后即为三明治。用不带盖烤听烤出的面包为长方圆顶形，类似长方形大面包', '其他', 500, NULL);
+INSERT INTO `snackinfo` VALUES (106, '202207128633', '雪碧', 4, '', 'sprite_PNG8928.png', '中粮', '湖南', 0, '2022-06-14', '12', 1, '2022-07-12', '「雪碧」汽水产品与可口可乐公司的其他饮料产品齐头并进，如今已经成为美国发展速度领先的主要非酒精饮料产品之一，并且是全球深受青睐的柠檬味汽水非酒精饮料产品之一', '饮料类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (107, '202207125282', '芬达', 4, 'null', 'fanta_PNG63.png', '中粮', '湖南', 0, '2022-07-09', '12', 1, '2022-07-12', '芬达（Fanta）是1955年可口可乐公司在意大利推出的一款橙味汽水。芬达拥有橙、苹果、葡萄、青柠、芒果、水蜜桃、菠萝、西瓜、草莓，茉莉蜜桃等口味', '饮料类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (108, '202207124180', '薯片', 10, '8', 'doritos_PNG52.png', '多力多滋', '美国', 1, '2022-07-14', '12', 1, '2022-07-12', '多力多滋是百事公司旗下零食品牌。 [1]  “多力多滋”全国上市于1966年，在美国全国推出的第一个玉米饼薯片', '膨化类', 100, NULL);
+INSERT INTO `snackinfo` VALUES (109, '202207124316', '薯片', 10, '', 'potato_chips_PNG4.png', '乐事', '湖南', 0, '2022-06-14', '12', 1, '2022-07-12', '乐事（Lay\'s）是美国的薯片品牌，创立于1932年，自1965年起成为百事旗下产品。 乐事品牌在不同国家有不同的名称表述，英国和爱尔兰称为Walkers，埃及称为Chipsy，越南称为Poca，以色列称为Tapuchips', '膨化类', 500, NULL);
+INSERT INTO `snackinfo` VALUES (110, '202207122413', '烤鸡翅', 7, '', 'grilled-spicy-chicken-wings-ketchup-260nw-1678801786.jpg', '肉肉', '湖南', 0, '2022-07-11', '1', 1, '2022-07-12', '年轻人，网络，好奇心，价格便宜，促成了烤鸡翅的火爆。火爆得有点过火，有可能的确是搂不住了，也有可能是自己搓火。要说成功，也真的不能说是烤鸡翅的美味，有很多甚至味道赶不上洋快餐中的奥尔良烤翅，这只能说是营销与包装策划上的成功，尽管是有点无心插柳的感觉', '肉制类', 100, NULL);
+INSERT INTO `snackinfo` VALUES (111, '202207123645', '开心果', 10, '7', 'pistachios-3223610__480.jpg', '干货', '湖南', 0, '2022-07-09', '6', 1, '2022-07-12', '开心果是世界四大干果之一，也是中国新疆喀什地区特有的珍贵木本油料、干果、药用等多种用途的经济树种，果实富含维生素、矿物质和抗氧化元素，具有低脂肪、低卡路里、高纤维的显著特点，对心脑血管疾病、老年性视网膜病变、防衰老等具有医疗保健功效，是世界坚果市场十分畅销的保健休闲食品', '其他', 500, NULL);
+INSERT INTO `snackinfo` VALUES (112, '202207126312', '烤鸡腿', 10, '8', 'thigh-3423122__340.jpg', '肉肉', '湖南', 0, '2022-07-14', '12', 1, '2022-07-12', '鸡腿是餐桌上的一道美味，制作原料主要有棒棒腿、柠檬、酱油、酒、孜然、辣椒粉等，因其肉质鲜嫩，酱香味道而深受欢迎', '肉制类', 500, NULL);
+INSERT INTO `snackinfo` VALUES (113, '202207124468', '美味锅巴', 1, '', '5aa686e71e5562d6.jpg', '狗牙儿', '湖南', 0, '2022-05-14', '12', 1, '2022-07-12', '香香辣辣的锅巴', '膨化类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (114, '202207125505', '红糖小麻花', 12, '8', 'f1af3eb3efe3b459.jpg', '惠寻', '山东', 0, '2022-07-09', '6', 1, '2022-07-12', '甜甜酥酥的小麻花', '膨化类', 500, NULL);
+INSERT INTO `snackinfo` VALUES (115, '202207129527', '蒜香味花生', 10, '8', '5240676272d6d715.jpg', '比比赞', '湖南', 0, '2022-06-14', '6', 1, '2022-07-12', '蒜香味的炒花生', '其他', 500, NULL);
+INSERT INTO `snackinfo` VALUES (116, '202207128083', '小卤蛋', 8, '5', '0a100fb9ec171759.jpg', '百草味', '湖南', 0, '2022-07-09', '6', 1, '2022-07-12', '小阿Giao最喜欢的小卤蛋', '肉制类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (117, '202207121025', '果冻', 10, '8', '7d86112f372e8d35.jpg', '喜之郎', '湖南', 0, '2022-06-19', '12', 1, '2022-07-12', '太空人都爱吃的喜之郎小果冻', '其他', 999, NULL);
+INSERT INTO `snackinfo` VALUES (118, '202207121781', '南瓜酥', 10, '7', '5b59ef979b2a23c6.jpg', '百草味', '上海', 0, '2022-07-09', '6', 1, '2022-07-12', '南瓜酥', '膨化类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (119, '202207124298', '米格玛', 20, '5', 'edb9811295b8b1cc.jpg', '徐福记', '湖南', 0, '2022-06-15', '12', 1, '2022-07-12', '徐福记米格玛糙米卷', '膨化类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (120, '202207124095', '棒棒冰', 10, '8', '03610aa56ed8a5e8.jpg', '旺旺', '湖南', 0, '2022-07-14', '12', 1, '2022-07-12', '旺旺棒棒冰', '饮料类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (121, '202207125163', '大象苏打水', 80, '8', '6aacc0fe65a38cbb.jpg', '三麟', '泰国', 1, '2022-07-05', '12', 1, '2022-07-12', '三麟泰国进口苏打水', '饮料类', 100, NULL);
+INSERT INTO `snackinfo` VALUES (122, '202207121981', '纯肉零食大礼包', 20, '8', 'd10a8e6682797ebd.jpg', '盐津铺子', '湖南', 0, '2022-06-17', '12', 1, '2022-07-12', '从上到下全是肉', '肉制类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (123, '202207122047', '壮汉山泉', 40, '8', '0797f23ddad97db8.jpg', '农夫山泉', '长白山', 0, '2022-07-14', '12', 1, '2022-07-12', '农夫山泉PLUS', '饮料类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (124, '202207121904', '麻辣王子', 30, '5', '224edfae1936f460.jpg', '麻辣王子', '湖南', 0, '2022-07-08', '12', 1, '2022-07-12', '够辣才过瘾', '肉制类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (125, '202207127369', '山药脆片', 10, '8', 'f936e2cdfc7ecc20.jpg', '良品铺子', '湖南', 0, '2022-06-17', '12', 1, '2022-07-12', '山药片脆脆的', '膨化类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (126, '202207129442', '金典有机奶', 70, '8', 'd605fd53c8ca3e04.jpg', '金典', '内蒙古', 0, '2022-07-14', '6', 1, '2022-07-12', '每天一杯奶，强壮中国人', '饮料类', 500, NULL);
+INSERT INTO `snackinfo` VALUES (127, '202207129103', '卫龙亲嘴烧', 10, '8', '51a64dab0cdb2d47.jpg', '卫龙', '湖南', 0, '2022-07-03', '12', 1, '2022-07-12', '亲嘴烧', '其他', 500, NULL);
+INSERT INTO `snackinfo` VALUES (128, '202207121530', '王老吉', 70, '8', 'af4e34e3d98870e5.jpg', '王老吉', '湖南', 0, '2022-07-09', '12', 1, '2022-07-12', '红罐王老吉', '饮料类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (129, '202207127570', '鳕鱼肠', 19.9, '', 'c7775bce7fc220ce.jpg', '窝小芽', '广州', 0, '2022-06-19', '6', 1, '2022-07-12', '都是新鲜的鳕鱼制作而成', '肉制类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (130, '202207128389', '卧龙手工大锅巴', 16, '8', 'ce0db340e8ff7e53.jpg', '卧龙', '湖南', 0, '2022-05-09', '12', 1, '2022-07-12', '卧龙大侠锅巴', '肉制类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (131, '202207129763', '乐事香芋片', 7.7, '', '141ab0b7bb7ed452.jpg', '乐事', '上海', 0, '2022-06-14', '12', 1, '2022-07-12', '脆脆的香芋炸片', '膨化类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (132, '202207123001', '纯甄酸奶', 80, '8', '1d07ae2aa6606465.jpg', '纯甄', '内蒙古', 0, '2022-07-07', '12', 1, '2022-07-12', '一口纯甄，回归纯与真', '饮料类', 498, NULL);
+INSERT INTO `snackinfo` VALUES (133, '202207127984', '椰树牌椰汁', 15, '', '20a65ea75e5ba296.jpg', '椰树', '海南', 0, '2022-07-10', '12', 1, '2022-07-12', '我从小喝到大', '饮料类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (134, '202207127768', '卫龙78度早餐蛋', 50, '8', 'ea6a196afc8e0e18.jpg', '卫龙', '湖南', 0, '2022-07-09', '12', 1, '2022-07-12', '大大的蛋', '肉制类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (135, '202207129951', '龟苓膏', 30, '8', '95428f97a42ef5ea.jpg', '双钱', '云南', 0, '2022-07-05', '12', 1, '2022-07-12', '双钱牌龟苓膏，好吃又健康', '饮料类', 999, NULL);
+INSERT INTO `snackinfo` VALUES (136, '202207127165', '旺旺小小酥', 12, '8', '5ab9bfcaNc9d4389d.jpg', '旺旺', '湖南', 0, '2022-07-09', '6', 1, '2022-07-12', '酥酥酥', '膨化类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (137, '202207122225', '甜甜乐星球杯', 15, '', '04c5723b96d7566c.jpg', '甜甜乐', '上海', 0, '2022-07-14', '12', 1, '2022-07-12', '甜甜乐星球杯', '其他', 100, NULL);
+INSERT INTO `snackinfo` VALUES (138, '202207124194', '美好时光海苔', 50, '8', 'e7e349d53f8facff.jpg', '美好时光', '海南', 0, '2022-06-15', '12', 1, '2022-07-12', '海苔就要美好时光', '其他', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (139, '202207121063', '猫耳朵', 10, '8', '4ee21f77b9eb9c87.jpg', '惠寻', '上海', 0, '2022-07-03', '12', 1, '2022-07-12', '酥酥的猫耳朵', '膨化类', 1000, NULL);
+INSERT INTO `snackinfo` VALUES (140, '202207126078', '花花肠', 20, '8', '37c6cad5483f99ca.jpg', '金磨坊', '湖南', 0, '2022-04-19', '12', 1, '2022-07-12', '全是花花肠子', '肉制类', 100, NULL);
 
 -- ----------------------------
 -- Table structure for userinfo
@@ -498,7 +350,7 @@ CREATE TABLE `userinfo`  (
 -- ----------------------------
 -- Records of userinfo
 -- ----------------------------
-INSERT INTO `userinfo` VALUES (22, '徐牛牛', 'xh666', 'xuhui666', '99999', '13719203555', '2027960078@qq.com', '男', '2022-06-26', '哈哈哈夜夜', NULL);
+INSERT INTO `userinfo` VALUES (22, '徐牛牛', 'xh666', 'xuhui666', '99764.0', '13719203555', '2027960078@qq.com', '男', '2022-06-26', '中国北京海淀区上地十街10号百度大厦', NULL);
 
 -- ----------------------------
 -- Procedure structure for haha

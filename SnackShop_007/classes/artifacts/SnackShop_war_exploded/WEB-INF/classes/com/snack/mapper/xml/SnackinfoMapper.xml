@@ -393,19 +393,19 @@
     where s_id = #{sId,jdbcType=INTEGER}
   </update>
   
-  
-  <!-- 查询热销商品 --> 
+
+  <!-- 查询热销商品 -->
   <select id="selectHot" resultMap="BaseResultMap" parameterType="map">
-    select snackinfo.*,sum(recordNumber) as xl 
-	from record,snackinfo 
-	where record.s_id=snackinfo.s_id  and snackinfo.state=1 
-	and recordDate BETWEEN #{dateone} and #{datetwo} 
+    select snackinfo.*,sum(recordNumber) as xl
+	from record,snackinfo
+	where record.s_id=snackinfo.s_id  and snackinfo.state=1
+	and recordDate BETWEEN #{dateone} and #{datetwo}
 	GROUP BY s_id  ORDER BY xl DESC  LIMIT 10
   </select>
-  
+
     <!--查询最新商品 -->
   <select id="selectNew" resultMap="BaseResultMap">
-    select * from snackinfo  ORDER  BY s_createDate desc LIMIT 30
+    select * from snackinfo  ORDER  BY s_createDate desc
   </select>
 
   <select id="selectgoods" resultMap="BaseResultMap">
@@ -426,7 +426,7 @@
       		and s_name like "%"#{snackName}"%"
       </if>
     </where>
-    ORDER  BY s_createDate desc LIMIT 30
+    ORDER  BY s_createDate desc
   </select>
   
   

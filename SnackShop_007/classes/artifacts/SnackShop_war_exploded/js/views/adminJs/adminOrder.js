@@ -135,18 +135,18 @@ var integralModule = angular.module("adminOrderApp",[]);
 		   	 				result = $.parseJSON(result);
 		   			        	if(true){
 		   			        		if(result.data==-5){
-		   			        			swal("商品数量不足!","error");
+		   			        			swal("商品数量不足!");
 		   			        		}else{
-		   			        			swal("发货成功!","success");
+		   			        			swal("发货成功!");
 		   			        			createTable();
 		   			        		}
 		   			        	}else{
-		   			        	    swal("发货失败!","error");
+		   			        	    swal("发货失败!");
 		   			        	    createTable();
 		   			        	}
 		   	 				},
 			   	 			error:function(){
-			   	 			    swal("没有权限!","error");
+			   	 			    swal("没有权限!");
 		   	 				}
 		   	 			});
 	   	            }) 
@@ -341,7 +341,6 @@ var integralModule = angular.module("adminOrderApp",[]);
 					    		}else if(row.oType==-2){
 					    			html=html+"<span style='cursor:pointer' class='update' data-id='"+ row.rId+ "'>修改&nbsp;&nbsp;</span>"
 					    			+"<span style='cursor:pointer' class='pushSnack' data-id='"+ row.id+ "'>确认发货&nbsp;&nbsp;</span>"
-					    			// +"<span style='cursor:pointer' class='outOrderDetail' data-id='"+ row.oId+ "'>报表</span>";
 					    			return html;
 					    		}else{
 					    			return html;

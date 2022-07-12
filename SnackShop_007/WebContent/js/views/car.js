@@ -78,37 +78,38 @@ var integralModule = angular.module("carApp",[]);
 		//支付
 		$('#comfirPay').on('click', function () {
 			if(true){
-			if($("#uPasword").val()!=''){
-				$.ajax({
-   	 				url:'/SnackShop'+'/user/userOrderPayMoneyConfirm',
-   	 				data:{
-   	 			    	"payNumber":$("#payNumber").val(),
-   	 			    	"uMoney":$("#uMoney").val(),
-   	 			    	"uPasword":$("#uPasword").val(),
-   	 			    	"oId":$("#payoId").val()
-   	 			    },
-   	 				type:'post',
-   	 				dataType:"json",
-   	 				success: function(result){
-	   	 				result = $.parseJSON(result);
-   			        	if(result.errCode=='000000'){
-   			        		swal("支付成功!");
-   			        		swal({
-   			        		  title: "支付成功!",
-   			        		},
-   			        		function(){
-   			        			location.href="/SnackShop"+"/shop/index";
-   			        		});
-
-
-   			        	}else if(result.errCode=='000001'){
-   			        		swal("请输入正确的密码!");
-   			        	}
-   	 				}
-   	 			});
-			}else{
-				swal("请输入支付密码!");
-			}
+				if($("#uPasword").val()!=''){
+					$.ajax({
+						url:'/SnackShop'+'/user/userOrderPayMoneyConfirm',
+						data:{
+							"payNumber":$("#payNumber").val(),
+							"uMoney":$("#uMoney").val(),
+							"uPasword":$("#uPasword").val(),
+							"oId":$("#payoId").val()
+						},
+						type:'post',
+						dataType:"json",
+						success: function(result){
+							result = $.parseJSON(result);
+							if(result.errCode=='000000'){
+								swal("支付成功!");
+								swal({
+										title: "支付成功!",
+										confirmButtonColor: "#DD6B55",
+										confirmButtonText: "确定",
+										closeOnConfirm: false
+									},
+									function(){
+										location.href="/SnackShop"+"/shop/index";
+									});
+							}else if(result.errCode=='000001'){
+								swal("请输入正确的密码!");
+							}
+						}
+					});
+				}else{
+					swal("请输入支付密码!");
+				}
 			}else{
 				swal("您的钱包余额不足!");
 			}
