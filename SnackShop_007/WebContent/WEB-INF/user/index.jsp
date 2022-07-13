@@ -80,8 +80,6 @@
 <div class="container index">
     <div class="span24">
         <div id="hotProduct" class="hotProduct clearfix">
-            <%--            <div class="title"><h4 style="color: white;font-size: 20px;">精选商品</h4>--%>
-            <%--            </div>--%>
             <div class="tab" style="width: 100%;background-color: #1E6BAE">
                 <div style="text-align: left;color: white;font-size: 20px;" class="title"><strong>精选商品</strong></div>
                 <div style="text-align: right;"><input type="hidden" value="${TypeNum}" id="TypeNum">

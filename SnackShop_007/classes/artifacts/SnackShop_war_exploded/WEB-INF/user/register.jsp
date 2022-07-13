@@ -81,13 +81,13 @@
 </div>
 <div class="container register">
 		<div class="span24">
-			<div class="wrap">
-				<div class="main clearfix">
+			<div class="wrap"  style="display: flex;justify-content: center;align-items: center;">
+				<div class="main clearfix" style="background-color: #a4be53;border: none;">
 					<div class="title">
-						<strong>会员注册</strong>USER REGISTER
+						<strong>用户注册</strong>零零柒零食商城欢迎您的到来!
 					</div>
 					<form id="registerForm"  method="post" novalidate="novalidate" >
-						<table>
+						<table >
 							<tbody>
 							<tr>
 								<th>

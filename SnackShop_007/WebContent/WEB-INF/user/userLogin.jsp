@@ -81,7 +81,7 @@
         <div class="wrap">
             <div class="main">
                 <div class="title">
-                    <strong>会员登录</strong>USER LOGIN
+                    <strong>用户登陆</strong>欢迎来到零零柒零食商城！
                 </div>
                 <form id="loginForm" method="post" novalidate="novalidate"
                       action="${pageContext.request.contextPath}/shop/userLoginPost">
@@ -113,7 +113,7 @@
 
                             </th>
                             <td>
-                                <input type="submit" class="submit" value="登 录"/>
+                                <input type="submit" class="submit" value="登 录" style="border-radius: 10px"/>
                             </td>
                         </tr>
                         <tr class="register">
@@ -122,9 +122,8 @@
                             </th>
                             <td>
                                 <dl>
-                                    <dt>还没有注册账号？</dt>
                                     <dd>
-                                        立即注册即可体验在线购物！
+                                        点击注册
                                         <a href="${pageContext.request.contextPath}/user/userRegisterGet">立即注册</a>
                                     </dd>
                                 </dl>

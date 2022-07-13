@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/adminCss/login.min.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/adminCss/login1.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/libs/bootstrap.min.css" >
 
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/libs/jquery.min.js"></script>
@@ -22,8 +22,8 @@
             <label class="control-label visible-ie8 visible-ie9">密&nbsp;码</label>
             <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="密码" name="adPassword" id="adPassword" /> </div>
 		<span style="margin-left: 20px;">${msg}</span>
-        <div class="form-actions">
-            <button type="submit" class="btn green uppercase" id="login">登 录</button>
+        <div class="form-actions" style="display: flex;justify-content: center;align-items: center">
+            <button type="submit" class="btn green uppercase" id="login" style="background-color: #4db3a5">登 录</button>
         </div>
         </form>
     </div>
